@@ -1,27 +1,25 @@
-// create a ten element class object
+const  student = {
+    id: 101,
+    balance: 5000,
+    name: 'kibria',
+    major: 'mathematics',
+    subjects: ['english', 'economincs', 'math 101', 'calculus'],
+    isRich: false,
+    bestFriend: {
+        name:'kundu',
+        subject: 'mathematics'
+    },
+    takeExam: function() {
+        console.log(this.subjects,'takeExam')
+    },
 
-class desh{
-    constructor(people, name, division, flag, president, proverty, rich, internationalAirport, population, river){
-        this.people = people;
-        this.name = name;
-        this.division = division;
-        this.flag = flag;
-        this.president = president;
-        this.proverty = proverty;
-        this.rich = rich;
-        this.internationalAirport = internationalAirport;
-        this.population = population;
-        this.river = river;
+    treate: function(expense, tip){
+    this.balanc = this.balance - expense - tip;
+    return this.balanc;
     }
+    
 }
 
+const bal = student.treate(203, 322);
 
-const deshDetails = new desh('good', 'multi', 'eight', 'blue and red', 'hamid', 'medium', 'some people', 'shahajalal airport', '17 crore', 'Jomuna');
-//console.log(deshDetails);
-
-
-// create an object
-
-const name2 = Object.create(deshDetails);
-
-console.log(name2);
+console.log(bal);
