@@ -27,6 +27,7 @@ class People {
 const peop = new People('manush', 12)
 
 
+// 5. function
 function name(name){
     this.name = name;
 }
