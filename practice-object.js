@@ -1,4 +1,4 @@
-const  student = {
+const student = {
     id: 101,
     balance: 5000,
     name: 'kibria',
@@ -20,6 +20,6 @@ const  student = {
     
 }
 
-const bal = student.treate(203, 322);
+ delete student.treate;
+console.log(student);
 
-console.log(bal);
